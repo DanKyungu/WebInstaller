@@ -21,5 +21,10 @@ namespace WebInstaller.Pages
         {
 
         }
+
+        public IActionResult OnPostAsync()
+        {
+            return RedirectToPage("Index");
+        }
     }
 }
