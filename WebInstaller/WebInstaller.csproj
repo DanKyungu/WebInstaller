@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="PageModels\" />
+    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
 
