@@ -4,37 +4,37 @@
     ViewData["Title"] = "Home page";
 }
 
-
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
             <form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="post">
+
                 <span class="login100-form-title">
                     Web Installer
                 </span>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-                    <input class="input100" type="text" name="databaseName" placeholder="Database Name">
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter Database Name">
+                    <input asp-for="@Model.DatabaseInformation.ServerName" class="input100" type="text" name="databaseName" placeholder="Database Name">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter Server Name">
-                    <input class="input100" type="text" name="ServerName" placeholder="Server Name">
+                    <input asp-for="DatabaseInformation.ServerName" class="input100" type="text" name="ServerName" placeholder="Server Name">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter Server Port">
-                    <input class="input100" type="text" name="ServerPort" placeholder="Server Name">
+                    <input asp-for="DatabaseInformation.ServerPort" class="input100" type="text" name="ServerPort" placeholder="Server Name">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter Server Username">
-                    <input class="input100" type="text" name="ServerPort" placeholder="Server UserName">
+                    <input asp-for="DatabaseInformation.ServerUserName" class="input100" type="text" name="ServerUsername" placeholder="Server UserName">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Please enter password">
-                    <input class="input100" type="password" name="ServerPassword" placeholder="Server Password">
+                    <input asp-for="DatabaseInformation.ServerPassword" class="input100" type="password" name="ServerPassword" placeholder="Server Password">
                     <span class="focus-input100"></span>
                 </div>
 
